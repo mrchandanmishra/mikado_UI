@@ -4,7 +4,7 @@ import { Box, Flex } from "../Box";
 import SocialLinks from "./Components/SocialLinks";
 
 export const StyledFooter = styled(Flex)`
-  background: ${darkColors.backgroundAlt};
+  background: linear-gradient(43deg, #330000 4%, #000000 43%, #0d0000 60%);
 `;
 
 export const StyledList = styled.ul`

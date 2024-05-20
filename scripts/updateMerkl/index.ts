@@ -45,7 +45,7 @@ const fetchAllMerklConfig = async (): Promise<MerklConfigResponse> => {
 const parseMerklConfig = (merklConfig: MerklConfig[]): MerklConfigPool[] => {
   const pools = merklConfig.reduce((acc, config) => {
     const _pools = Object.values(config.pools).filter(
-      (pool) => Object.keys(pool.aprs).length > 1 && pool.ammName.toLowerCase().startsWith('pancakeswap'),
+      (pool) => Object.keys(pool.aprs).length > 1 && pool.ammName.toLowerCase().startsWith('MIKADO'),
     )
     return [...acc, ..._pools]
   }, [] as MerklPool[])

@@ -4,32 +4,26 @@ import {
   ChartIcon,
   Flex,
   HistoryIcon,
-  HotDisableIcon,
-  HotIcon,
   IconButton,
   NotificationDot,
   Text,
-  TooltipText,
   useModal,
   useTooltip,
 } from '@pancakeswap/uikit'
 import { useExpertMode } from '@pancakeswap/utils/user'
 import { Swap } from '@pancakeswap/widgets-internal'
 import TransactionsModal from 'components/App/Transactions/TransactionsModal'
-import InternalLink from 'components/Links'
 import GlobalSettings from 'components/Menu/GlobalSettings'
 import RefreshIcon from 'components/Svg/RefreshIcon'
 import { CHAIN_REFRESH_TIME } from 'config/constants/exchange'
 import { useActiveChainId } from 'hooks/useActiveChainId'
 import { useSwapHotTokenDisplay } from 'hooks/useSwapHotTokenDisplay'
 import { useAtom } from 'jotai'
-import Image from 'next/image'
 import { ReactElement, memo, useCallback, useContext, useEffect, useState } from 'react'
 import { isMobile } from 'react-device-detect'
 import { useRoutingSettingChanged } from 'state/user/smartRouter'
 import { styled } from 'styled-components'
 import atomWithStorageWithErrorCatch from 'utils/atomWithStorageWithErrorCatch'
-import BuyCryptoIcon from '../../../../public/images/moneyBangs.svg'
 import { SettingsMode } from '../../../components/Menu/GlobalSettings/types'
 import { SwapFeaturesContext } from '../SwapFeaturesContext'
 
@@ -110,7 +104,7 @@ const CurrencyInputHeader: React.FC<React.PropsWithChildren<Props>> = memo(
           <Swap.CurrencyInputHeaderSubTitle>{subtitle}</Swap.CurrencyInputHeaderSubTitle>
         </Flex>
         <Flex width="100%" justifyContent="end">
-          {chainId ? (
+          {/* {chainId ? (
             <Flex alignItems="center" justifyContent="center" px="4px" mt="5px">
               <TooltipText
                 ref={buyCryptoTargetRef}
@@ -124,7 +118,7 @@ const CurrencyInputHeader: React.FC<React.PropsWithChildren<Props>> = memo(
               </TooltipText>
               {buyCryptoTooltipVisible && (!isMobile || mobileTooltipShow) && buyCryptoTooltip}
             </Flex>
-          ) : null}
+          ) : null} */}
           {isChartSupported && (
             <ColoredIconButton
               onClick={() => {
@@ -144,7 +138,7 @@ const CurrencyInputHeader: React.FC<React.PropsWithChildren<Props>> = memo(
               )}
             </ColoredIconButton>
           )}
-          {isHotTokenSupported && (
+          {/* {isHotTokenSupported && (
             <ColoredIconButton
               variant="text"
               scale="sm"
@@ -172,7 +166,7 @@ const CurrencyInputHeader: React.FC<React.PropsWithChildren<Props>> = memo(
                 </>
               )}
             </ColoredIconButton>
-          )}
+          )} */}
           <NotificationDot show={expertMode || isRoutingSettingChange}>
             <GlobalSettings
               color="textSubtle"

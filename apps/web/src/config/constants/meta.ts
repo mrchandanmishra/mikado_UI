@@ -4,8 +4,8 @@ import { ASSET_CDN } from './endpoints'
 import { PageMeta } from './types'
 
 export const DEFAULT_META: PageMeta = {
-  title: 'PancakeSwap',
-  description: 'Trade, earn, and own crypto on the all-in-one multichain DEX',
+  title: 'MIKADO',
+  description: 'Decentralize The Future Of Trade With Mikado Finance',
   image: `${ASSET_CDN}/web/og/hero.jpg`,
 }
 
@@ -55,10 +55,10 @@ const getPathList = (t: ContextApi['t']): PathList => {
       '/nfts/collections': { basePath: true, title: t('Collections'), image: `${ASSET_CDN}/web/og/nft.jpg` },
       '/nfts/activity': { title: t('Activity'), image: `${ASSET_CDN}/web/og/nft.jpg` },
       '/profile': { basePath: true, title: t('Profile') },
-      '/pancake-squad': { basePath: true, title: t('Pancake Squad') },
+      '/pancake-squad': { basePath: true, title: t('Mikado Squad') },
       '/pottery': { basePath: true, title: t('Pottery'), image: `${ASSET_CDN}/web/og/pottery.jpg` },
     },
-    defaultTitleSuffix: t('PancakeSwap'),
+    defaultTitleSuffix: t('MIKADO'),
   }
 }
 

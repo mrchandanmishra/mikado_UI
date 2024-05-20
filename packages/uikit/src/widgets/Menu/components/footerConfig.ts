@@ -2,39 +2,39 @@ import { ContextApi } from "@pancakeswap/localization";
 import { FooterLinkType } from "../../../components/Footer/types";
 
 export const footerLinks: (t: ContextApi["t"]) => FooterLinkType[] = (t) => [
-  {
-    label: t("Ecosystem"),
-    items: [
-      {
-        label: t("Trade"),
-        href: "https://pancakeswap.finance/swap",
-      },
-      {
-        label: t("Earn"),
-        href: "https://pancakeswap.finance/farms",
-      },
-      {
-        label: t("Game"),
-        href: "https://pancakeswap.games/",
-      },
-      {
-        label: t("NFT"),
-        href: "https://pancakeswap.finance/nfts",
-      },
-      {
-        label: t("Tokenomics"),
-        href: "https://docs.pancakeswap.finance/governance-and-tokenomics/cake-tokenomics",
-      },
-      {
-        label: t("CAKE Emission Projection"),
-        href: "https://analytics.pancakeswap.finance/",
-      },
-      {
-        label: t("Merchandise"),
-        href: "https://merch.pancakeswap.finance/",
-      },
-    ],
-  },
+  // {
+  //   label: t("Ecosystem"),
+  //   items: [
+  //     {
+  //       label: t("Trade"),
+  //       href: "https://pancakeswap.finance/swap",
+  //     },
+  //     {
+  //       label: t("Earn"),
+  //       href: "https://pancakeswap.finance/farms",
+  //     },
+  //     {
+  //       label: t("Game"),
+  //       href: "https://pancakeswap.games/",
+  //     },
+  //     {
+  //       label: t("NFT"),
+  //       href: "https://pancakeswap.finance/nfts",
+  //     },
+  //     {
+  //       label: t("Tokenomics"),
+  //       href: "https://docs.pancakeswap.finance/governance-and-tokenomics/cake-tokenomics",
+  //     },
+  //     {
+  //       label: t("CAKE Emission Projection"),
+  //       href: "https://analytics.pancakeswap.finance/",
+  //     },
+  //     {
+  //       label: t("Merchandise"),
+  //       href: "https://merch.pancakeswap.finance/",
+  //     },
+  //   ],
+  // },
   {
     label: "Business",
     items: [
